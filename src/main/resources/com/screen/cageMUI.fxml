@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane fx:id="de" prefHeight="400.0" prefWidth="600.0" styleClass="rootsignup" stylesheets="temp.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.services.CageMUIController">
+    <children>
+        <Label layoutX="202.0" layoutY="11.0" style="-fx-font-size: 24px;" text="Cage Management" />
+        <Line endX="344.8" endY="0.0" layoutX="236.0" layoutY="42.0" startX="-211.2" startY="0.0" />
+        <Button fx:id="add" layoutX="390.0" layoutY="73.0" mnemonicParsing="false" onAction="#addCage" opacity="0.61" prefHeight="20.0" prefWidth="60.0" style="-fx-font-size: 14px;" text="Add" textAlignment="CENTER" />
+        <Button fx:id="change" layoutX="450.0" layoutY="73.0" mnemonicParsing="false" onAction="#updateCage" opacity="0.5" prefHeight="30.0" prefWidth="66.0" style="-fx-font-size: 14px;" text="Update" textAlignment="CENTER" />
+        <Button fx:id="delete" layoutX="516.0" layoutY="73.0" mnemonicParsing="false" onAction="#deleteCage" opacity="0.5" prefHeight="30.0" prefWidth="66.0" style="-fx-font-size: 14px;" text="Delete" textAlignment="CENTER" />
+        <TableView fx:id="cageTableView" layoutX="23.0" layoutY="103.0" prefHeight="277.0" prefWidth="560.0">
+            <columns>
+                <TableColumn fx:id="cageIdColumn" prefWidth="213.60003662109375" style="-fx-alignment: CENTER;" text="Cage ID" />
+                <TableColumn fx:id="cageStatusColumn" prefWidth="193.8000030517578" style="-fx-alignment: CENTER;" text="State" />
+            <TableColumn fx:id="petIdcolumn" prefWidth="148.199951171875" text="PET ID" />
+            </columns>
+        </TableView>
+        <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#goBack" opacity="0.5" prefWidth="65.0" style="-fx-font-size: 14px;" text="Back" textAlignment="CENTER" />
+      <Button fx:id="detail" layoutX="330.0" layoutY="72.0" mnemonicParsing="false" onAction="#detailInfo" opacity="0.49" prefHeight="30.0" prefWidth="60.0" text="Info" />
+        <Label layoutX="24.0" layoutY="75.0" text="Search"> Search</Label>
+        <TextField fx:id="filterField" layoutX="79.0" layoutY="72.0" onAction="#filterCage" />
+    </children>
+</AnchorPane>

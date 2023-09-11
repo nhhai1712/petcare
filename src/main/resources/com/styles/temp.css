@@ -1,0 +1,134 @@
+/** fruitcombo.css
+    place in same directory as FruitComboApplication.java
+    ensure build system copies the css file to the build output path */
+
+
+.gradient {
+    -fx-background-color: linear-gradient(to bottom right, #0f6789, #286155);
+
+}
+/*.background-image {*/
+/*    background-image: url("path/to/your/image.png");*/
+/*    background-size: cover;*/
+/*    !* Other background properties *!*/
+/*}*/
+
+
+
+.white-form{
+    -fx-background-color: #ffffff;
+    /*-fx-background-radius: 10;*/
+    /*-fx-border-radius: 10;*/
+    -fx-border-color: #0f6789;
+    -fx-border-width: 2;
+    -fx-padding: 20;
+}
+
+
+/*button with backgorund color engage white-form*/
+.white-form-button{
+    -fx-background-color: #0f6789;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #0f6789;
+    -fx-text-fill: #ffffff;
+}
+
+
+#appointTableView .table-column {
+    -fx-alignment: CENTER-RIGHT;
+}
+
+#btnRegister {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+}
+
+#back {
+    -fx-background-color: #f44336;
+    -fx-text-fill: white;
+}
+.center-aligned-column .table-cell {
+    -fx-alignment: center;
+}
+.rootsignup {
+    -fx-background-color: linear-gradient(#B0E0E6, #FFFFFF);
+}
+
+/* align text in table and column
+    * https://stackoverflow.com/questions/30665608/how-to-align-text-in-javafx-tableview-column
+ */
+
+.dashboard {
+    -fx-background-color: linear-gradient(#B0E0E6, #FFFFFF);
+}
+
+/* code styles sheet cho button sao cho phù hợp với .gradient {
+    -fx-background-color: linear-gradient(to bottom right, #0f6789, #286155);} và
+ */
+.button {
+
+    -fx-background-color: #0f6789;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #0f6789;
+    -fx-text-fill: #ffffff;
+
+}
+
+.chart-plot-background {
+    -fx-background-color: linear-gradient(#B0E0E6, #FFFFFF);
+}
+
+
+
+
+#petTableView {
+    -fx-background-color: linear-gradient(#B0E0E6, #FFFFFF);
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);*/
+    text-align: center;
+}
+#idColumn #nameColumn #usernameColumn #passwordColumn #genderColumn #categoryColumn #ageColumn #colorColumn {
+    background-color: #0f6789;
+    color: white;
+    text-align: center;
+}
+/* Tập tin styles.css */
+
+/* Thiết kế cho VBox */
+.VBox {
+    -fx-padding: 10px;  /* Khoảng cách xung quanh các nút */
+    -fx-spacing: 10px;  /* Khoảng cách giữa các nút */
+    -fx-alignment: CENTER_LEFT; /* Căn chữ đầu dòng thẳng hàng */
+}
+
+/* Thiết kế cho Button */
+.Button {
+    -fx-background-color: #3498db; /* Màu nền của nút */
+    -fx-text-fill: #ffffff; /* Màu chữ */
+    -fx-font-size: 16; /* Kích thước chữ */
+    -fx-padding: 10px; /* Khoảng cách giữa chữ và biên nút */
+    -fx-border-radius: 5px; /* Bán kính của biên nút */
+    -fx-background-radius: 5px; /* Bán kính của nền nút */
+}
+
+/* Thiết kế cho Button khi hover */
+.Button:hover {
+    -fx-background-color: #2980b9; /* Màu nền của nút khi hover */
+}
+
+/* Thiết kế cho Button khi nhấn */
+.Button:pressed {
+    -fx-background-color: #2c3e50; /* Màu nền của nút khi nhấn */
+}
+
+
+.gradient1 {
+    -fx-background-color: linear-gradient(to bottom right, #0f6789, #286155);
+}
+

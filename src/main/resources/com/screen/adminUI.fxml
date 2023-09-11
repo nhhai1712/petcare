@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="button" stylesheets="temp.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.user.AdminUIController">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <BorderPane layoutX="245.0" layoutY="100.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <left>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="VBOX" stylesheets="temp.css" BorderPane.alignment="CENTER">
+                            <children>
+                                <VBox id="vbox" fx:id="vbox" layoutY="170.0" minHeight="0.0" minWidth="0.0" prefHeight="322.0" prefWidth="200.0" spacing="0" styleClass="vbox" AnchorPane.bottomAnchor="108.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="170.0">
+                                    <children>
+
+                                            <Button fx:id="dashboard" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#viewStatisticalUI" prefHeight="45.0" prefWidth="200.0" style="-fx-font-size:16;" text="         Dashboard" />
+                                            <Button fx:id="users" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#viewUserUI" prefHeight="45.0" prefWidth="200.0" style="-fx-font-size:15;" text="         User Management">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Button>
+                                            <Button fx:id="pet" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#viewPetUI" prefHeight="45.0" prefWidth="200.0" style="-fx-font-size:16;" text="         Pet Management" />
+                                            <Button fx:id="medical" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#viewManageMedicineUI" prefHeight="45.0" prefWidth="200.0" style="-fx-font-size:16;" text="         Medical Management" />
+                                            <Button fx:id="services" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#viewManageCareUI" prefHeight="45.0" prefWidth="200.0" style="-fx-font-size:16;" text="         Services Management" />
+                                            <Button fx:id="cage" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#viewManageCage" prefHeight="45.0" prefWidth="200.0" style="-fx-font-size:16;" text="         Cage Management" />
+                                            <Button fx:id="appointtments" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#viewManageAppointmentsUI" prefHeight="45.0" prefWidth="200.0" style="-fx-font-size:16;" text="         Appointment" />
+                                            <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" prefHeight="45.0" prefWidth="200.0" style="-fx-font-size:16;" text="         Feedback" />
+                                            <Button fx:id="signout" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#signOut" prefHeight="45.0" prefWidth="200.0" style="-fx-font-size:16;" text="         SignOut" />
+
+                                    </children>
+                                </VBox>
+                                <AnchorPane prefHeight="170.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="123.0" fitWidth="171.0" layoutX="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@clinic.png" />
+                                 </image>
+                              </ImageView>
+                           </children></AnchorPane>
+                            </children>
+                        </AnchorPane>
+                    </left>
+                    <center>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <ScrollPane hbarPolicy="ALWAYS" layoutX="7.0" prefHeight="170.0" prefWidth="599.0" vbarPolicy="NEVER">
+                                    <content>
+                                        <AnchorPane fx:id="total" prefHeight="150.0" prefWidth="800.0">
+                                            <children>
+                                                <AnchorPane layoutX="15.0" layoutY="8.0" prefHeight="142.0" prefWidth="194.0" styleClass="gradient">
+                                                    <children>
+                                                        <Label layoutX="141.0" layoutY="109.0" text="USER">
+                                                            <font>
+                                                                <Font name="Comic Sans MS Bold Italic" size="12.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <Label fx:id="totalUser" layoutX="113.0" layoutY="48.0" text="0">
+                                                            <font>
+                                                                <Font name="System Bold Italic" size="37.0" />
+                                                            </font>
+                                                        </Label>
+                                          <ImageView fitHeight="80.0" fitWidth="89.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@user2.png" />
+                                             </image>
+                                          </ImageView>
+                                                    </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="235.0" layoutY="8.0" prefHeight="142.0" prefWidth="200.0" styleClass="gradient1">
+                                                    <children>
+                                                        <Label layoutX="152.0" layoutY="109.0" prefHeight="16.0" prefWidth="33.0" text="PET">
+                                                            <font>
+                                                                <Font name="Comic Sans MS Bold Italic" size="12.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <Label fx:id="totalPet" layoutX="141.0" layoutY="48.0" text="0">
+                                                            <font>
+                                                                <Font name="System Bold Italic" size="37.0" />
+                                                            </font>
+                                                        </Label>
+                                          <ImageView fitHeight="80.0" fitWidth="96.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@pet.png" />
+                                             </image>
+                                          </ImageView>
+                                                    </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="455.0" layoutY="8.0" prefHeight="142.0" prefWidth="200.0" styleClass="gradient">
+                                                    <children>
+                                                        <Label layoutX="152.0" layoutY="109.0" prefHeight="16.0" prefWidth="33.0" text="Cage">
+                                                            <font>
+                                                                <Font name="Comic Sans MS Bold Italic" size="12.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <Label fx:id="totalCage" layoutX="138.0" layoutY="48.0" text="0">
+                                             <font>
+                                                <Font name="System Bold Italic" size="37.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="80.0" fitWidth="96.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@cage3.png" />
+                                             </image>
+                                          </ImageView>
+                                                    </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="665.0" layoutY="8.0" prefHeight="142.0" prefWidth="200.0" styleClass="gradient">
+                                                    <children>
+                                                        <Label fx:id="totalMedicine" layoutX="143.0" layoutY="48.0" text="0">
+                                             <font>
+                                                <Font name="System Bold Italic" size="37.0" />
+                                             </font>
+                                          </Label>
+                                                        <Label layoutX="137.0" layoutY="102.0" prefHeight="18.0" prefWidth="55.0" text="Medical">
+                                                            <font>
+                                                                <Font name="Comic Sans MS Bold Italic" size="12.0" />
+                                                            </font>
+                                                        </Label>
+                                          <ImageView fitHeight="80.0" fitWidth="89.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@medicine.png" />
+                                             </image>
+                                          </ImageView>
+                                                    </children>
+                                                </AnchorPane>
+                                            </children>
+                                            <styleClass>
+                                                <String fx:value="rootsignup" />
+                                                <String fx:value="center-aligned-column" />
+                                            </styleClass>
+                                        </AnchorPane>
+                                    </content>
+                                </ScrollPane>
+                                <AnchorPane fx:id="viewdashboard" layoutY="180.0" prefHeight="400.0" prefWidth="600.0" styleClass="chart-plot-background">
+                                    <children>
+                                        <BarChart layoutX="9.0" prefHeight="400.0" prefWidth="600.0" styleClass="chart-plot-background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <xAxis>
+                                                <CategoryAxis prefHeight="0.0" prefWidth="544.0" side="BOTTOM" />
+                                            </xAxis>
+                                            <yAxis>
+                                                <NumberAxis side="LEFT" />
+                                            </yAxis>
+                                        </BarChart>
+                                        <PieChart layoutX="8.0" layoutY="-3.0" prefHeight="411.2" prefWidth="597.6" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </AnchorPane>
+                    </center>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>
